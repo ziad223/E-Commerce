@@ -1,0 +1,140 @@
+
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 40px;
+  background-color: #e3edf6;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+.header .logo{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #000;
+}
+.header .logo .logo-icon{
+  font-size: 25px;
+  color: teal;
+}
+.header .mid-header {
+  display: flex;
+  align-items: center;
+}
+.header .mid-header input {
+  padding: 10px;
+  width: 250px;
+  border: none;
+  border: 3px solid rgb(45, 62, 212);
+  outline: none;
+}
+.header .mid-header button {
+  padding: 9px 10px;
+  border: none;
+  background-color: rgb(45, 62, 212);
+  cursor: pointer;
+  color: #fff;
+}
+.search-icon {
+  font-size: 18px;
+}
+.right-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.right-header p {
+  font-size: 18px;
+  color: blue;
+  font-weight: bold;
+}
+.right-header .r-icon {
+  font-size: 25px;
+  cursor: pointer;
+  color: #000;
+}
+.right-header .r-icon.shi{
+  position: relative;
+
+}
+.badge{
+  text-decoration: none;
+  background-color: #f00;
+  padding: 4px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 14px;
+  position: absolute;
+  right: 140px;
+  top: 26px;
+  font-weight: bold;
+}
+.auth button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+}
+.user-flex {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+.user-flex p {
+  color: #000;
+}
+.profile-img {
+  width: 46px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width : 480px){
+  .header {
+    justify-content: space-around;
+    padding: 30px 10px;
+  }
+  .header .logo h2{
+    font-size: 14px;
+  }
+  .header .logo .logo-icon{
+    font-size: 20px;
+  }
+  .header .mid-header {
+    display: none;
+  }
+  .right-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .right-header p {
+    font-size: 18px;
+    color: blue;
+    font-weight: bold;
+  }
+  .right-header .r-icon {
+    font-size: 20px;
+    cursor: pointer;
+    color: #000;  
+  }
+  .badge{
+    padding: 3px;
+    text-align: center;
+    right: 125px;
+    font-size: 10px;
+  }
+
+  .user-flex p {
+    display: none;
+  }
+  .profile-img {
+    width: 36px;
+  }
+}

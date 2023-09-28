@@ -1,0 +1,267 @@
+.top-banner{
+    background-color: #e3edf6;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.top-banner-details h2{
+    font-size: 40px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.top-banner-details .shop-link{
+    border: 1px solid grey;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    transition: 0.5s;
+}
+.top-banner-details .shop-link:hover{
+    background-color: #0989ff;
+    color: #fff;
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 20px;
+    margin-top: 100px;
+}
+.about .box{
+    background-color:#e3edf6;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 20%;
+}
+.about .box h3{
+    margin-bottom: 10px;
+}
+.about .box .box-icon{
+    font-size: 25px;
+    color: red;
+}
+
+.items{
+    width: 90%;
+    margin:100px auto;
+}
+.items .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 50px 0px;
+}
+.items .buttons button{
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid teal;
+    transition: 0.5s;
+    font-size: 18px;
+    border-radius: 5px;
+}
+.items .buttons button:hover{
+    background-color: teal;
+    color: #fff;
+}
+.items h2{
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+.items .items-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.items .items-content img{
+    width: 200px;
+    height: 200px;
+}
+.items .item{
+  border: 1px solid grey;
+  text-align: center;
+  padding: 20px;
+  width: 21%;
+}
+
+.items .item-details > *{
+    margin-top: 15px;
+}
+.items .item .item-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.items .item .item-icons .icon-item{
+    font-size: 22px;
+    cursor: pointer;
+    padding: 10px;
+    transition: 0.5s;
+}
+.items .item .item-icons .icon-item:hover{
+    background-color: #ccc;
+}
+.items .item-details h4{
+    margin-bottom: 10px;
+}
+.p{
+    background-color: #000;
+    font-size: 20px;
+}
+.slides{
+   width: 80%;
+   margin: auto;
+   position: relative;
+}
+.arrow{
+    position: absolute;
+    top: 50%;
+    background-color: #ccc;
+    color: #000;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50%;
+    z-index: 10;
+}
+.arrow.next{
+    right: -30px;
+}
+.arrow.prev{
+    left: -30px;
+}
+.banner2{
+    width: 80%;
+    margin: 100px auto;
+    background-color:#0989ff;
+    padding: 30px;
+    border-radius: 10px;
+    height: max-content ;
+}
+.banner2 .banner-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.banner2 .banner-content .banner-details{
+    color: #fff;
+}
+.banner2 .banner-content .banner-details > *{
+    margin-top: 40px;
+}
+.banner2 .banner-content .banner-details h2{
+    font-size: 50px;
+}
+.banner2 .banner-content .banner-details h4{
+    font-size: 25px;    
+    margin-bottom: 40px;
+}
+.shop-now{
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 15px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 18px;
+    transition: 0.5s;
+}
+.shop-now:hover{
+    background-color: blue;
+}
+.g{
+    padding: 10px;
+    border: none;
+    background-color: rgb(26, 173, 26);
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+     width: 100%;
+     transition: 0.5s;
+     text-decoration: none;
+     margin-top: 10px;
+  }
+  .details :hover{
+    background-color: green;
+  }
+  
+  @media screen and (max-width : 550px){
+    .top-banner{
+        padding: 20px;
+        flex-direction: column;
+        max-width: 100%;
+    }
+    .top-banner-details h2{
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .top-banner-img img{
+        margin-top: 40px;
+        max-width: 100%;
+    }
+    
+    .top-banner-details .shop-link{
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    .product-type{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .product-type .product {
+        width: 70%;
+        margin: auto;
+        }
+    
+    .about{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .about .box{
+        width: 80%;
+    }
+    .items{
+        width: 90%;
+        margin:100px auto;
+    }
+    .items .buttons{
+        flex-direction: column;
+    }
+    .items .buttons button{
+        width: 80%;
+    }
+ 
+    .items .items-content{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .items .item{
+      width: 80%;
+    }
+    
+    .arrow{
+        padding: 8px;
+        font-size: 16px;
+    }
+    .arrow.next{
+        right: -18px;
+    }
+    .arrow.prev{
+        left: -18px;
+    }
+   
+      
+  }
